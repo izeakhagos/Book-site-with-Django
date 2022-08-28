@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>Book Site | Register</title>
+{% endblock %}
+{% block content %}
+<br>
+<br>
+	<div id = 'container' style = 'height: 400px'>
+		<div class = 'header'>
+			<h2>Sign Up</h2>
+		</div>
+		<form method="post">
+			{% csrf_token %}
+			<div>Username:</div>
+			{{form.username}}
+			<div>Password:</div>
+
+			{{form.password1}}
+
+			<div>Password:</div>
+			{{form.password2}}
+			<br>
+		  {% if request.GET.next %}
+		  <input type="hidden" name="next" value="{{ request.path }}">
+			{% endif %}
+			<br>
+			 {{register_form.errors}}
+			<button type="submit" class="btn btn-primary btn-block btn-large">Sign Up</button>
+			<br>
+			<a type="submit" style="text-decoration: none;" href="{% url 'accounts:login' %}" class="btn btn-primary btn-block btn-large">Already a member?</a>
+		</form>
+	</div>
+
+{% endblock %}

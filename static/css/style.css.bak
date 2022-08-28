@@ -1,0 +1,147 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Calibri;
+}
+header, footer{
+    width: 100%;
+    height: 50px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#logo{
+    width: 100px;
+    height: 80px;
+}
+#logo img{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    overflow: none;
+}
+#navbarNav{
+    justify-content: center !important;
+     
+}
+#navbarNav ul{
+    width: 500px;
+    justify-content: space-evenly;
+}
+#navbarNav ul li a{
+    font-size: 18px;
+}
+
+#genreNavContainer{
+    width: 100%;
+    list-style: none;
+    justify-content: center;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#formContainer #id_name{
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid darkblue;
+    font-size: 15px;
+    padding: 0px 0px 0px 10px;
+}
+
+
+.input {
+    width: 200px;
+    height: autopx;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+.button{
+    width: 100px;
+    height: 40px;
+    background-color: lightgray;
+    color: black;
+    border-radius: 5px;
+    margin-left: auto ;
+    border: none;
+    margin-bottom: 10px;
+}
+
+
+.navbar-collapse{
+    justify-content: space-evenly !important;
+}
+
+
+.navbar-collapse ul{
+    width: 200px !important;
+    justify-content: space-between;
+}
+
+
+.navbar-collapse ul li a{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.mr-auto, .mx-auto{
+    margin-right: 0px !important;
+    justify-content: space-between;
+    width: 200px;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.ca-button {
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  border: none;
+  /* 3 */
+  overflow: visible;
+  /* 4 */
+  font: inherit;
+  color: inherit;
+  /* 5 */
+  text-transform: none;
+  /* 6 */
+  -webkit-appearance: none;
+  border-radius: 0;
+  /* 7 */
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 30px;
+  vertical-align: middle;
+  font-size: 0.875rem;
+  /* 8 */
+  line-height: 38px;
+  /* 9 */
+  text-align: center;
+  /* 10 */
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.1s ease-in-out;
+  transition-property: color, background-color, border-color;
+}
+.ca-button-default {
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #e5e5e5;
+}
+
