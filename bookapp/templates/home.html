@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>Book Site | Home</title>
+{% endblock %}
+{% block content %}
+<br>
+<br>
+
+ <div class="row">
+     <h4>The best thing you can do for your brain requires a minimum of money and time - just read a book regularly.</h4>
+     <h4>Studies show that daily reading can work wonders in memory, health and even in connection with the Children</h4></div>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row"><h4>Recommended Books</h4></div>
+        <div class="row">
+            {%for book in recommended_books %}
+            <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
+                <a href="{% url 'book_detail' book.slug %}">
+                    <div>
+                        <div class="card card-default card-body">
+                            <img src="{{book.cover_image.url}}">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {%endfor%}
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row"><h4>Business Books</h4></div>
+        <div class="row">
+            {%for book in business_books %}
+            <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
+                <a href="{% url 'book_detail' book.slug %}">
+                    <div>
+                        <div class="card card-default card-body">
+                            <img src="{{book.cover_image.url}}">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {%endfor%}
+        </div>
+    </div>
+
+{% endblock %}
